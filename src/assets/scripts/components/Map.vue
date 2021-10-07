@@ -169,6 +169,12 @@ export default {
       }
     },
   },
+  mounted() {
+    this.$refs.map.mapObject.on(
+      "popupclose",
+      () => (this.selectedEntryID = null)
+    );
+  },
   watch: {},
   methods: {
     getLatLng(entry) {
