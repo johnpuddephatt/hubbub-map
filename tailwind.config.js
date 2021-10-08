@@ -12,5 +12,10 @@ module.exports = {
     fontFamily: {
       sans: ["Helvetica Now", "Helvetica", "Arial", "sans-serif"],
     },
+    extend: {
+      colors: {
+        hubbuborange: "#d86f3e",
+      },
+    },
   },
 };

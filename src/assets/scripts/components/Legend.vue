@@ -1,8 +1,12 @@
 <template>
-  <div class="fixed top-0 left-16 w-80 z-[999] h-screen py-16">
+  <div class="fixed top-0 left-16 w-[22rem] z-[999] h-screen py-16">
     <div
-      class="max-h-full px-4 py-6 space-y-1 overflow-y-auto bg-white shadow-2xl rounded-3xl"
+      class="max-h-full px-4 py-8 space-y-1 overflow-y-auto bg-white shadow-2xl rounded-3xl"
     >
+      <h1
+        class="mx-6 mb-4 text-2xl font-semibold leading-tight text-center text-hubbuborange"
+        v-html="siteData.strapline"
+      ></h1>
       <div
         @click="$emit('clicked', selectedCategory == key ? null : key)"
         class="flex flex-row items-center px-2 py-1 space-x-3 cursor-pointer hover:bg-gray-100 rounded-xl"
@@ -39,4 +43,9 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+h1 strong {
+  display: block;
+  font-weight: 900;
+}
+</style>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   	<meta charset="utf-8">
-  	<title>{{ site.title }} | {{ site.strapline }}</title>
+  	<title>{{ site.title }} | {{ site.strapline | striptags() }}</title>
     <link rel="stylesheet" href="/assets/styles/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=block" rel="stylesheet">

@@ -1,8 +1,8 @@
 {
   "title": "Hubbub",
-  "strapline": "Map",
+  "strapline": "Explore projects enabled by the <strong>5p cup charge!</strong>",
   "categories": {
-    "Cup Fund": {
+    "The Cup Fund": {
       "color": "#8043F9",
       "description": "cup recycling",
       "circularIcon": "cupfund-circular.png",
@@ -20,39 +20,39 @@
       "circularIcon": "intheloop-circular.png",
       "squareIcon": "intheloop-square.jpg"
     },
-    "Reusable cup": {
+    "Reusable cup trial": {
       "color": "#6CC8BD",
-      "description": "trial",
+      "description": "",
       "circularIcon": "reusablecup-circular.png",
       "squareIcon": "reusablecup-square.jpg"
     },
     "Grab Your Cup": {
       "color": "#F2A5A3",
-      "description": "reusable cup",
+      "description": "cup reuse",
       "circularIcon": "grabyourcup-circular.png",
       "squareIcon": "grabyourcup-square.jpg"
     },
-    "Cup Share": {
+    "CupShare trial": {
       "color": "#337FF1",
-      "description": "trial",
+      "description": "cup reuse",
       "circularIcon": "cupshare-circular.png",
       "squareIcon": "cupshare-square.jpg"
     },
-    "Drones": {
+    "Using drones to map litter": {
       "color": "#D92A89",
-      "description": "litter mapping",
+      "description": "plastic waste and pollution",
       "circularIcon": "drones-circular.png",
       "squareIcon": "drones-square.jpg"
     },
     "Give It A Grow": {
       "color": "#04BF53",
-      "description": "",
+      "description": "creating green spaces",
       "circularIcon": "giveitagrow-circular.png",
       "squareIcon": "giveitagrow-square.jpg"
     },
-    "Plastic Fishing": {
+    "Plastic Fishing tour": {
       "color": "#57DEFC",
-      "description": "tour",
+      "description": "plastic waste and pollution",
       "circularIcon": "plasticfishing-circular.png",
       "squareIcon": "plasticfishing-square.jpg"
     }

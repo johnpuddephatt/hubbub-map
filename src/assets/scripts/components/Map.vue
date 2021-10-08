@@ -79,9 +79,9 @@
           </div>
         </l-popup>
         <l-icon
-          :iconAnchor="selectedEntryID == entry.id ? [30, 82] : [18, 47]"
+          :iconAnchor="selectedEntryID == entry.id ? [30, 82] : [16, 40]"
           :popupAnchor="[0, -35]"
-          :iconSize="selectedEntryID == entry.id ? [61, 82] : [35, 47]"
+          :iconSize="selectedEntryID == entry.id ? [61, 82] : [32, 40]"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237.76 314.03">
             <path
@@ -203,14 +203,14 @@ export default {
         disableClusteringAtZoom: this.maxZoom,
         spiderLegPolylineOptions: {
           weight: 6,
-          color: "#efbfd3",
+          color: this.categories[category].color,
           opacity: 0.75,
         },
         iconCreateFunction: (cluster) => {
           var childCount = cluster.getChildCount();
 
           return new DivIcon({
-            html: `<div class="relative"><span class="absolute block w-5 h-5 font-bold leading-relaxed text-center transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full left-1/2">${childCount}</span>
+            html: `<div class="relative"><span class="absolute block w-full h-5 mt-1.5 font-bold leading-relaxed text-center text-white">${childCount}</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237.76 314.03">
           <path
             fill="#000000"
@@ -224,7 +224,8 @@ export default {
           />
         </svg></div>`,
             className: "",
-            iconSize: new Point(40, 40),
+            iconSize: new Point(28, 40),
+            iconAnchor: new Point(14, 40),
           });
         },
       };
@@ -240,5 +241,9 @@ export default {
 
 .leaflet-popup-tip-container {
   @apply hidden;
+}
+
+.leaflet-tile-pane {
+  opacity: 0.65;
 }
 </style>
