@@ -3,25 +3,25 @@
   "strapline": "Explore projects enabled by the <strong>5p cup charge!</strong>",
   "categories": {
     "The Cup Fund": {
-      "color": "#8043F9",
+      "color": "#733FDC",
       "description": "cup recycling",
       "circularIcon": "cupfund-circular.png",
       "squareIcon": "cupfund-square.jpg"
     },
     "Network Rail": {
-      "color": "#F3691F",
+      "color": "#FF6B00",
       "description": "cup recycling",
       "circularIcon": "networkrail-circular.png",
       "squareIcon": "networkrail-square.jpg"
     },
     "In the Loop": {
-      "color": "#FEDD3E",
+      "color": "#FFE242",
       "description": "on-the-go recycling",
       "circularIcon": "intheloop-circular.png",
       "squareIcon": "intheloop-square.jpg"
     },
     "Reusable cup trial": {
-      "color": "#6CC8BD",
+      "color": "#22AD98",
       "description": "",
       "circularIcon": "reusablecup-circular.png",
       "squareIcon": "reusablecup-square.jpg"
@@ -38,21 +38,21 @@
       "circularIcon": "cupshare-circular.png",
       "squareIcon": "cupshare-square.jpg"
     },
-    "Using drones to map litter": {
-      "color": "#D92A89",
-      "description": "plastic waste and pollution",
+    "Drone litter mapping": {
+      "color": "#EC61B4",
+      "description": "plastic pollution",
       "circularIcon": "drones-circular.png",
       "squareIcon": "drones-square.jpg"
     },
     "Give It A Grow": {
-      "color": "#04BF53",
+      "color": "#63D8A5",
       "description": "creating green spaces",
       "circularIcon": "giveitagrow-circular.png",
       "squareIcon": "giveitagrow-square.jpg"
     },
     "Plastic Fishing tour": {
-      "color": "#57DEFC",
-      "description": "plastic waste and pollution",
+      "color": "#76C8D7",
+      "description": "plastic pollution",
       "circularIcon": "plasticfishing-circular.png",
       "squareIcon": "plasticfishing-square.jpg"
     }

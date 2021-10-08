@@ -11,6 +11,31 @@
     :zoomAnimation="true"
     :noBlockingAnimations="true"
   >
+    <div
+      title="Reset map view"
+      @click="resetMap"
+      class="cursor-pointer fixed z-[9999] top-4 right-4 p-1 bg-gray-50 shadow rounded border-2 border-opacity-30 border-gray-900"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+      >
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="22" y1="12" x2="18" y2="12"></line>
+          <line x1="6" y1="12" x2="2" y2="12"></line>
+          <line x1="12" y1="6" x2="12" y2="2"></line>
+          <line x1="12" y1="22" x2="12" y2="18"></line>
+        </g>
+      </svg>
+    </div>
     <l-control-zoom :position="isLandscape ? 'bottomright' : 'topright'" />
     <l-tile-layer :url="url" :attribution="attribution" />
     <l-tile-layer v-if="zoom >= 10" :url="url2" :attribution="attribution" />
@@ -30,10 +55,10 @@
       >
         <l-popup
           :ref="`popup-${entry.id}`"
-          class="flex flex-row overflow-hidden bg-white shadow-xl rounded-3xl"
+          class="flex flex-row overflow-hidden bg-white shadow-xl clip-path-2"
           :options="{
-            maxWidth: 400,
-            minWidth: 400,
+            maxWidth: 430,
+            minWidth: 430,
             offset: [0, -20],
             closeButton: false,
             className: '',
@@ -41,7 +66,7 @@
         >
           <img
             :src="`/assets/images/${categories[category.key].squareIcon}`"
-            class="flex-none object-cover object-center w-1/3"
+            class="flex-none object-cover object-center w-1/3 clip-path-3"
           />
           <div class="px-5 py-6">
             <h3 class="text-2xl font-bold leading-tight ">
@@ -177,6 +202,9 @@ export default {
   },
   watch: {},
   methods: {
+    resetMap() {
+      this.$refs.map.mapObject.flyTo(this.center, this.minZoom);
+    },
     getLatLng(entry) {
       let latLngArray = [
         parseFloat(entry.latitude),
@@ -224,8 +252,8 @@ export default {
           />
         </svg></div>`,
             className: "",
-            iconSize: new Point(28, 40),
-            iconAnchor: new Point(14, 40),
+            iconSize: new Point(32, 40),
+            iconAnchor: new Point(16, 40),
           });
         },
       };

@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-0 left-16 w-[22rem] z-[999] h-screen py-16">
     <div
-      class="max-h-full px-4 py-8 space-y-1 overflow-y-auto bg-white shadow-2xl rounded-3xl"
+      class="max-h-full px-4 py-8 space-y-1 overflow-y-auto bg-white clip-path-1"
     >
       <h1
         class="mx-6 mb-4 text-2xl font-semibold leading-tight text-center text-hubbuborange"
@@ -9,7 +9,7 @@
       ></h1>
       <div
         @click="$emit('clicked', selectedCategory == key ? null : key)"
-        class="flex flex-row items-center px-2 py-1 space-x-3 cursor-pointer hover:bg-gray-100 rounded-xl"
+        class="flex flex-row items-center px-3 py-1 space-x-3 cursor-pointer hover:bg-gray-100 rounded-xl"
         :class="selectedCategory == key ? 'bg-gray-100' : ''"
         v-for="(category, key) in siteData.categories"
         :key="category.circularIcon"
