@@ -55,10 +55,10 @@
       >
         <l-popup
           :ref="`popup-${entry.id}`"
-          class="flex flex-row overflow-hidden bg-white shadow-xl clip-path-2"
+          class="flex flex-row bg-white clip-path-2"
           :options="{
-            maxWidth: 430,
-            minWidth: 430,
+            maxWidth: 450,
+            minWidth: 450,
             offset: [0, -20],
             closeButton: false,
             className: '',
@@ -68,7 +68,7 @@
             :src="`/assets/images/${categories[category.key].squareIcon}`"
             class="flex-none object-cover object-center w-1/3 clip-path-3"
           />
-          <div class="px-5 py-6">
+          <div class="py-6 pl-5 pr-10">
             <h3 class="text-2xl font-extrabold leading-tight ">
               {{ category.key }}
             </h3>
