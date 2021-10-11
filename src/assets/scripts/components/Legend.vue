@@ -4,7 +4,7 @@
       class="max-h-full px-4 py-8 space-y-1 overflow-y-auto bg-white clip-path-1"
     >
       <h1
-        class="mx-6 mb-4 text-2xl font-semibold leading-tight text-center text-hubbuborange"
+        class="mx-6 mb-4 text-2xl font-bold leading-tight text-center text-hubbuborange"
         v-html="siteData.strapline"
       ></h1>
       <div
@@ -20,7 +20,7 @@
         />
         <div>
           <h3 class="font-bold leading-tight">{{ key }}</h3>
-          <p class="leading-tight">{{ category.description }}</p>
+          <p class="font-medium leading-tight">{{ category.description }}</p>
         </div>
       </div>
     </div>

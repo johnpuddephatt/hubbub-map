@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        hubbuborange: "#d86f3e",
+        hubbuborange: "#FF6B00",
       },
     },
   },

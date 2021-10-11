@@ -37,6 +37,7 @@
       :entries="entries"
       :categories="siteData.categories"
       :selectedCategory="selectedCategory"
+      @reset="selectedCategory = null"
     />
     <div
       class="fixed text-center tracking-wide text-gray-700 text-sm transform -translate-x-1/2 bottom-4 left-1/2 z-[9999]"

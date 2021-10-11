@@ -69,14 +69,14 @@
             class="flex-none object-cover object-center w-1/3 clip-path-3"
           />
           <div class="px-5 py-6">
-            <h3 class="text-2xl font-bold leading-tight ">
+            <h3 class="text-2xl font-extrabold leading-tight ">
               {{ category.key }}
             </h3>
-            <p class="!my-0 leading-tight text-2xl font-semibold text-gray-800">
+            <p class="!my-0 leading-tight text-2xl font-medium text-gray-800">
               {{ categories[category.key].description }}
             </p>
             <p
-              class="pt-2 pb-4 text-xs text-gray-800 tracking-wide !my-0 uppercase"
+              class="pt-2 pb-4 text-xs text-gray-800 font-medium tracking-wide !my-0 uppercase"
             >
               <svg
                 class="-mt-0.5 inline-block w-4 h-4"
@@ -200,10 +200,32 @@ export default {
       () => (this.selectedEntryID = null)
     );
   },
-  watch: {},
+  watch: {
+    categorisedEntries() {
+      console.log("categorised entries changed");
+
+      if (this.categorisedEntries.length == 1) {
+        this.$refs.map.mapObject.fitBounds(
+          this.categorisedEntries[0].values.map((elem) => {
+            return this.getLatLng(elem);
+          }),
+          { padding: L.point(50, 50), maxZoom: 9 }
+        );
+      } else {
+        this.resetMap();
+      }
+
+      // this.$refs.map.mapObject.map.fitBounds(
+      //   //
+      // )
+    },
+  },
   methods: {
     resetMap() {
       this.$refs.map.mapObject.flyTo(this.center, this.minZoom);
+      this.$refs.map.mapObject.once("zoomend", () => {
+        this.$emit("reset");
+      });
     },
     getLatLng(entry) {
       let latLngArray = [
