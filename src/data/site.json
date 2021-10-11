@@ -4,55 +4,55 @@
   "categories": {
     "The Cup Fund": {
       "color": "#733FDC",
-      "description": "cup recycling",
+      "description": "Cup recycling",
       "circularIcon": "cupfund-circular.png",
       "squareIcon": "cupfund-square.jpg"
     },
     "Network Rail": {
       "color": "#FF6B00",
-      "description": "cup recycling",
+      "description": "Cup recycling",
       "circularIcon": "networkrail-circular.png",
       "squareIcon": "networkrail-square.jpg"
     },
     "In the Loop": {
       "color": "#FFE242",
-      "description": "on-the-go recycling",
+      "description": "On-the-go recycling",
       "circularIcon": "intheloop-circular.png",
       "squareIcon": "intheloop-square.jpg"
     },
-    "Reusable cup trial": {
+    "Returnable cup trial": {
       "color": "#22AD98",
-      "description": "",
+      "description": "Cup reuse",
       "circularIcon": "reusablecup-circular.png",
       "squareIcon": "reusablecup-square.jpg"
     },
     "Grab Your Cup": {
       "color": "#F2A5A3",
-      "description": "cup reuse",
+      "description": "Cup reuse",
       "circularIcon": "grabyourcup-circular.png",
       "squareIcon": "grabyourcup-square.jpg"
     },
-    "CupShare trial": {
+    "Cup Share trial": {
       "color": "#337FF1",
-      "description": "cup reuse",
+      "description": "Cup reuse",
       "circularIcon": "cupshare-circular.png",
       "squareIcon": "cupshare-square.jpg"
     },
     "Drone litter mapping": {
       "color": "#EC61B4",
-      "description": "plastic pollution",
+      "description": "Plastic pollution",
       "circularIcon": "drones-circular.png",
       "squareIcon": "drones-square.jpg"
     },
     "Give It A Grow": {
       "color": "#63D8A5",
-      "description": "creating green spaces",
+      "description": "Creating green spaces",
       "circularIcon": "giveitagrow-circular.png",
       "squareIcon": "giveitagrow-square.jpg"
     },
     "Plastic Fishing tour": {
       "color": "#76C8D7",
-      "description": "plastic pollution",
+      "description": "Plastic pollution",
       "circularIcon": "plasticfishing-circular.png",
       "squareIcon": "plasticfishing-square.jpg"
     }
