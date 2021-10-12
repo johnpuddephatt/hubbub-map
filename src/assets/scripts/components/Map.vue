@@ -64,10 +64,12 @@
             className: '',
           }"
         >
-          <img
-            :src="`/assets/images/${categories[category.key].squareIcon}`"
-            class="flex-none object-cover object-center w-1/3 clip-path-3"
-          />
+          <div class="relative flex-none w-1/3 clip-path-3">
+            <img
+              :src="`/assets/images/${categories[category.key].squareIcon}`"
+              class="absolute inset-0 object-cover object-center w-full h-full"
+            />
+          </div>
           <div class="py-6 pl-5 pr-10">
             <h3 class="text-2xl font-extrabold leading-tight ">
               {{ category.key }}
